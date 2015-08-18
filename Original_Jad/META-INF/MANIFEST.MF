@@ -1,0 +1,25 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.8.3
+Created-By: 1.7.0_15-b03 (Oracle Corporation)
+MIDlet-1: Frog Dash,/res/icon/icon.png,SuperPackage.ApplicationMidlet
+MIDlet-Permissions: javax.microedition.io.Connector.http, javax.microe
+ dition.io.Connector.https, javax.wireless.messaging.sms.receive, java
+ x.wireless.messaging.sms.send, javax.microedition.io.Connector.sms
+MIDlet-Vendor: mob.ua
+Nokia-MIDlet-App-Orientation: landscape
+store: nokia1
+Nokia-MIDlet-On-Screen-Keypad: no
+MIDlet-Name: Frog Dash
+Navi-Key-Hidden: true
+App-ID: Apposaurus_FrogDash_other
+MIDlet-Version: 1.0
+IA-X-distID: 551
+IA-X-keywords: frog,dash,game,java,free,coin,cutter,water,river,road,s
+ ky
+sound: true
+contentNo: 547969
+ads: true
+MicroEdition-Configuration: CLDC-1.1
+MicroEdition-Profile: MIDP-2.0
+Nokia-MIDlet-Category: Game
+SiteURL: wap.mob.ua

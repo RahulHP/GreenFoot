@@ -6,7 +6,7 @@ import greenfoot.*;
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Background extends World
+public class PlayingWorld extends World
 {
     public int score=0;
     int count=0;
@@ -22,7 +22,7 @@ public class Background extends World
      * Constructor for objects of class Background.
      * 
      */
-    public Background()
+    public PlayingWorld()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(800, 400, 1); 
