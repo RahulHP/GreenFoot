@@ -8,7 +8,8 @@ import greenfoot.*;
  */
 public class Player extends Actor
 {
-
+    
+    
     /**
      * Act - do whatever the Player wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -22,15 +23,47 @@ public class Player extends Actor
     boolean UP;
     boolean JUMP_FLAG ;
     
+    private static GreenfootImage[] normal = new GreenfootImage[6];
+    private static GreenfootImage[] heli = new GreenfootImage[6];;
+    private static GreenfootImage[] skate = new GreenfootImage[6];;
+    
+    public static void initialiseImages(GreenfootImage[] array,String base_file)
+    {
+        array[0] = new GreenfootImage("Normal_1.png");
+        array[1] = new GreenfootImage("Normal_2.png");
+        array[2] = new GreenfootImage("Normal_3.png");        
+        array[3] = new GreenfootImage("Normal_4.png");
+        array[4] = new GreenfootImage("Normal_5.png");
+        array[5] = new GreenfootImage("Normal_6.png");
+    }
+    
         public Player()
     {
+        initialiseImages(normal, "Normal");
+        initialiseImages(heli, "Heli");
+        initialiseImages(skate, "Skate");
         image1 = new GreenfootImage("Normal_1.png");
         image2 = new GreenfootImage("Normal_2.png");
         image3 = new GreenfootImage("Normal_3.png");
         setImage(image1);
     }
-    public void act() 
+    
+    public void changeImage()
     {
+        if (img_count == 6)
+        {
+            setImage("Normal_1.png");
+        }
+        else
+        {
+            img_count++;
+            setImage("Normal_3.png");
+        }
+        
+    }
+    public void act() 
+    {   
+        changeImage();
         if ( Greenfoot.isKeyDown("space")){
             JUMP_FLAG=true;
             
@@ -38,10 +71,15 @@ public class Player extends Actor
         if (JUMP_FLAG){
             jump();
         }
-          if ( isTouching(Enemy.class)){
-              Greenfoot.stop();
-            }
-            img_count ++;
+        if ( isTouching(Enemy.class)){
+              Greenfoot.setWorld(new EndGame());
+        }
+        
+        
+    }
+    
+    /**
+           img_count ++;
             if ( getImage() == image3 && img_count == 5 )
     {
     setImage(image1);
@@ -58,6 +96,7 @@ public class Player extends Actor
         img_count = 0;
     }
      }
+     */
     
     
     public void jump(){

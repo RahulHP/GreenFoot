@@ -1,8 +1,13 @@
 #BlueJ class context
-comment0.params=
-comment0.target=Player()
+comment0.params=array\ base_file
+comment0.target=void\ initialiseImages(greenfoot.GreenfootImage[],\ java.lang.String)
 comment1.params=
-comment1.target=void\ act()
+comment1.target=Player()
 comment2.params=
-comment2.target=void\ jump()
-numComments=3
+comment2.target=void\ changeImage()
+comment3.params=
+comment3.target=void\ act()
+comment4.params=
+comment4.target=void\ jump()
+comment4.text=\n\ \ \ \ \ \ \ \ \ \ \ img_count\ ++;\n\ \ \ \ \ \ \ \ \ \ \ \ if\ (\ getImage()\ \=\=\ image3\ &&\ img_count\ \=\=\ 5\ )\n\ \ \ \ {\n\ \ \ \ setImage(image1);\n\ \ \ \ img_count\ \=\ 0;\n\ \ \ \ }\n\ \ \ \ else\ if\ (getImage()\ \=\=\ image1\ &&\ img_count\ \=\=\ 5)\n\ \ \ \ {\n\ \ \ \ setImage(image2);\n\ \ \ \ img_count\ \=\ 0;\n\ \ \ \ }\ \ \ \ \n\ \ \ \ else\ if\ (getImage()\ \=\=\ image2\ &&\ img_count\ \=\=\ 5)\n\ \ \ \ {\n\ \ \ \ \ \ \ \ setImage(image3);\n\ \ \ \ \ \ \ \ img_count\ \=\ 0;\n\ \ \ \ }\n\ \ \ \ \ }\n
+numComments=5

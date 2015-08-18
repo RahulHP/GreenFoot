@@ -16,7 +16,7 @@ public class Enemy extends Actor
      */
     public void act() 
     {
-        Background bg = (Background) getWorld();
+        PlayingWorld bg = (PlayingWorld) getWorld();
         // Add your action code here.
 
         move(-8);
