@@ -1,4 +1,7 @@
 To do
+
+// Commented part is completed
+
 	Images scale Rahul
 		Instructions- space, up/down
 		Show score, Restart, Game over
