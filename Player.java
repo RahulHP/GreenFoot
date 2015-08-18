@@ -22,7 +22,7 @@ public class Player extends Actor
     int steps=0;
     boolean UP;
     boolean JUMP_FLAG ;
-    
+    /**
     private static GreenfootImage[] normal = new GreenfootImage[6];
     private static GreenfootImage[] heli = new GreenfootImage[6];;
     private static GreenfootImage[] skate = new GreenfootImage[6];;
@@ -36,12 +36,13 @@ public class Player extends Actor
         array[4] = new GreenfootImage("Normal_5.png");
         array[5] = new GreenfootImage("Normal_6.png");
     }
-    
+    *
+    */
         public Player()
     {
-        initialiseImages(normal, "Normal");
-        initialiseImages(heli, "Heli");
-        initialiseImages(skate, "Skate");
+        //initialiseImages(normal, "Normal");
+        //initialiseImages(heli, "Heli");
+        //initialiseImages(skate, "Skate");
         image1 = new GreenfootImage("Normal_1.png");
         image2 = new GreenfootImage("Normal_2.png");
         image3 = new GreenfootImage("Normal_3.png");
@@ -76,9 +77,9 @@ public class Player extends Actor
         }
         
         
-    }
     
-    /**
+    
+    
            img_count ++;
             if ( getImage() == image3 && img_count == 5 )
     {
@@ -96,7 +97,7 @@ public class Player extends Actor
         img_count = 0;
     }
      }
-     */
+    
     
     
     public void jump(){

@@ -1,13 +1,11 @@
 #BlueJ class context
-comment0.params=array\ base_file
-comment0.target=void\ initialiseImages(greenfoot.GreenfootImage[],\ java.lang.String)
+comment0.params=
+comment0.target=Player()
+comment0.text=\n\ \ \ \ private\ static\ GreenfootImage[]\ normal\ \=\ new\ GreenfootImage[6];\n\ \ \ \ private\ static\ GreenfootImage[]\ heli\ \=\ new\ GreenfootImage[6];;\n\ \ \ \ private\ static\ GreenfootImage[]\ skate\ \=\ new\ GreenfootImage[6];;\n\ \ \ \ \n\ \ \ \ public\ static\ void\ initialiseImages(GreenfootImage[]\ array,String\ base_file)\n\ \ \ \ {\n\ \ \ \ \ \ \ \ array[0]\ \=\ new\ GreenfootImage("Normal_1.png");\n\ \ \ \ \ \ \ \ array[1]\ \=\ new\ GreenfootImage("Normal_2.png");\n\ \ \ \ \ \ \ \ array[2]\ \=\ new\ GreenfootImage("Normal_3.png");\ \ \ \ \ \ \ \ \n\ \ \ \ \ \ \ \ array[3]\ \=\ new\ GreenfootImage("Normal_4.png");\n\ \ \ \ \ \ \ \ array[4]\ \=\ new\ GreenfootImage("Normal_5.png");\n\ \ \ \ \ \ \ \ array[5]\ \=\ new\ GreenfootImage("Normal_6.png");\n\ \ \ \ }\n\n
 comment1.params=
-comment1.target=Player()
+comment1.target=void\ changeImage()
 comment2.params=
-comment2.target=void\ changeImage()
+comment2.target=void\ act()
 comment3.params=
-comment3.target=void\ act()
-comment4.params=
-comment4.target=void\ jump()
-comment4.text=\n\ \ \ \ \ \ \ \ \ \ \ img_count\ ++;\n\ \ \ \ \ \ \ \ \ \ \ \ if\ (\ getImage()\ \=\=\ image3\ &&\ img_count\ \=\=\ 5\ )\n\ \ \ \ {\n\ \ \ \ setImage(image1);\n\ \ \ \ img_count\ \=\ 0;\n\ \ \ \ }\n\ \ \ \ else\ if\ (getImage()\ \=\=\ image1\ &&\ img_count\ \=\=\ 5)\n\ \ \ \ {\n\ \ \ \ setImage(image2);\n\ \ \ \ img_count\ \=\ 0;\n\ \ \ \ }\ \ \ \ \n\ \ \ \ else\ if\ (getImage()\ \=\=\ image2\ &&\ img_count\ \=\=\ 5)\n\ \ \ \ {\n\ \ \ \ \ \ \ \ setImage(image3);\n\ \ \ \ \ \ \ \ img_count\ \=\ 0;\n\ \ \ \ }\n\ \ \ \ \ }\n
-numComments=5
+comment3.target=void\ jump()
+numComments=4
