@@ -1,11 +1,16 @@
 #BlueJ class context
 comment0.params=
 comment0.target=Player()
-comment0.text=\n\ \ \ \ private\ static\ GreenfootImage[]\ normal\ \=\ new\ GreenfootImage[6];\n\ \ \ \ private\ static\ GreenfootImage[]\ heli\ \=\ new\ GreenfootImage[6];;\n\ \ \ \ private\ static\ GreenfootImage[]\ skate\ \=\ new\ GreenfootImage[6];;\n\ \ \ \ \n\ \ \ \ public\ static\ void\ initialiseImages(GreenfootImage[]\ array,String\ base_file)\n\ \ \ \ {\n\ \ \ \ \ \ \ \ array[0]\ \=\ new\ GreenfootImage("Normal_1.png");\n\ \ \ \ \ \ \ \ array[1]\ \=\ new\ GreenfootImage("Normal_2.png");\n\ \ \ \ \ \ \ \ array[2]\ \=\ new\ GreenfootImage("Normal_3.png");\ \ \ \ \ \ \ \ \n\ \ \ \ \ \ \ \ array[3]\ \=\ new\ GreenfootImage("Normal_4.png");\n\ \ \ \ \ \ \ \ array[4]\ \=\ new\ GreenfootImage("Normal_5.png");\n\ \ \ \ \ \ \ \ array[5]\ \=\ new\ GreenfootImage("Normal_6.png");\n\ \ \ \ }\n\n
 comment1.params=
-comment1.target=void\ changeImage()
+comment1.target=void\ act()
 comment2.params=
-comment2.target=void\ act()
+comment2.target=void\ eat()
 comment3.params=
-comment3.target=void\ jump()
-numComments=4
+comment3.target=void\ is_chance()
+comment4.params=
+comment4.target=void\ bonus()
+comment5.params=
+comment5.target=void\ moving_image()
+comment6.params=
+comment6.target=void\ jump()
+numComments=7
