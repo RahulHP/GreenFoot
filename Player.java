@@ -11,6 +11,7 @@ public class Player extends Actor
     int base_y_location = 300;
     boolean UP;
     boolean JUMP_FLAG ;
+    boolean POWERUP;
     Background bg = (Background) getWorld();
     
     public Player()
@@ -23,11 +24,21 @@ public class Player extends Actor
     
       
    public void act(){
-        if ( Greenfoot.isKeyDown("space")){
-            JUMP_FLAG=true;
+        if (!POWERUP){
+            if ( Greenfoot.isKeyDown("space")){
+                JUMP_FLAG=true;
+            }
+            if (JUMP_FLAG){
+                jump();
+            }
         }
-        if (JUMP_FLAG){
-            jump();
+        else{
+          if ( Greenfoot.isKeyDown("up")){
+            setLocation(getX(),getY()-4;
+          }
+          else if (Greenfoot.isKeyDown("down")){
+            setLocation(getX(),getY()+4;
+          }
         }
         moving_image();
         bonus();
